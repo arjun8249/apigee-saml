@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<GenerateSAMLAssertion ignoreContentType="false" name="Generate-SAML-Assertion-1">
+    <DisplayName>Generate SAML Assertion-1</DisplayName>
+    <KeyStore>
+        <Name ref="reference">saml_test</Name>
+        <Alias ref="reference">saml</Alias>
+    </KeyStore>
+    <Subject ref="reference">1234</Subject>
+    <Issuer ref="reference">samltest</Issuer>
+    <Template ignoreUnresolvedVariables="false"/>
+    <OutputVariable>
+        <Message name="message">
+            <Namespaces>
+                <Namespace prefix="soapenv">http://schemas.xmlsoap.org/soap/envelope/</Namespace>
+            </Namespaces>
+            <XPath>/soapenv:Envelope/soapenv:Header</XPath>
+        </Message>
+        <!--lowVariable name="assertion.content"/-->
+    </OutputVariable>
+</GenerateSAMLAssertion>

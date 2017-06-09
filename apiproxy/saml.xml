@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<APIProxy revision="3" name="saml">
+    <Basepaths>/saml</Basepaths>
+    <ConfigurationVersion majorVersion="4" minorVersion="0"/>
+    <CreatedAt>1489672068130</CreatedAt>
+    <CreatedBy></CreatedBy>
+    <Description></Description>
+    <DisplayName>saml</DisplayName>
+    <LastModifiedAt>1489682472448</LastModifiedAt>
+    <LastModifiedBy></LastModifiedBy>
+    <Policies>
+        <Policy>Assign-Message-1</Policy>
+        <Policy>Generate-SAML-Assertion-1</Policy>
+        <Policy>Generate-SAML-Assertion-2</Policy>
+        <Policy>Validate-SAML-Assertion-1</Policy>
+        <Policy>Validate-SAML-Assertion-2</Policy>
+        <Policy>Validate-SAML-Assertion-3</Policy>
+    </Policies>
+    <ProxyEndpoints>
+        <ProxyEndpoint>default</ProxyEndpoint>
+    </ProxyEndpoints>
+    <Resources/>
+    <Spec></Spec>
+    <TargetServers/>
+    <TargetEndpoints>
+        <TargetEndpoint>TargetEndpoint-1</TargetEndpoint>
+    </TargetEndpoints>
+    <validate>false</validate>
+</APIProxy>
