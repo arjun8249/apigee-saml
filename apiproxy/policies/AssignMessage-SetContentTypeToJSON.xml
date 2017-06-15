@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<AssignMessage async="false" continueOnError="false" enabled="true" name="AssignMessage-SetContentTypeToJSON">
+    <DisplayName>AssignMessage-SetContentTypeToJSON</DisplayName>
+    <Properties/>
+    <Set>
+        <Headers>
+            <Header name="Content-type">application/json</Header>
+        </Headers>
+    </Set>
+    <IgnoreUnresolvedVariables>true</IgnoreUnresolvedVariables>
+    <AssignTo createNew="false" transport="http" type="response">calloutResponse</AssignTo>
+</AssignMessage>

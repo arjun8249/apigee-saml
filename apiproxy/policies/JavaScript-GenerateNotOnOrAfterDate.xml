@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Javascript async="false" continueOnError="false" enabled="true" timeLimit="200" name="JavaScript-GenerateNotOnOrAfterDate">
+    <DisplayName>JavaScript-GenerateNotOnOrAfterDate</DisplayName>
+    <Properties/>
+    <ResourceURL>jsc://GenerateNotOnOrAfterDate.js</ResourceURL>
+    <IncludeURL>jsc://dateformat.js</IncludeURL>
+</Javascript>

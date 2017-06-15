@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<APIProxy revision="7" name="SAMLAssertion">
+    <Basepaths>/saml</Basepaths>
+    <ConfigurationVersion majorVersion="4" minorVersion="0"/>
+    <CreatedAt>1497564319950</CreatedAt>
+    <Description></Description>
+    <DisplayName>saml</DisplayName>
+    <LastModifiedAt>1497564594186</LastModifiedAt>
+    <Policies>
+        <Policy>AssignMessage-SetContentTypeToJSON</Policy>
+        <Policy>AssignMessage-SetContentTypeToXML</Policy>
+        <Policy>AssignMessage-SetContentTypeToXML2</Policy>
+        <Policy>ExtractVariables-ExtractAuthVariable</Policy>
+        <Policy>ExtractVariables-ExtractUserCred</Policy>
+        <Policy>GenerateSAML-Assertion1</Policy>
+        <Policy>GenerateSAML-Assertion2</Policy>
+        <Policy>JavaScript-GenerateNotOnOrAfterDate</Policy>
+        <Policy>RaiseFault-SendResponse</Policy>
+        <Policy>ServiceCallout-ApigeeBaaS</Policy>
+        <Policy>ValidateSAML-Assertion1</Policy>
+        <Policy>ValidateSAML-Assertion2</Policy>
+        <Policy>ValidateSAML-Assertion3</Policy>
+        <Policy>VerifyApiKey</Policy>
+    </Policies>
+    <ProxyEndpoints>
+        <ProxyEndpoint>default</ProxyEndpoint>
+    </ProxyEndpoints>
+    <Resources>
+        <Resource>jsc://GenerateNotOnOrAfterDate.js</Resource>
+        <Resource>jsc://dateformat.js</Resource>
+    </Resources>
+    <Spec></Spec>
+    <TargetServers/>
+    <TargetEndpoints>
+        <TargetEndpoint>default</TargetEndpoint>
+    </TargetEndpoints>
+    <validate>false</validate>
+</APIProxy>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ServiceCallout async="false" continueOnError="false" enabled="true" name="ServiceCallout-ApigeeBaaS">
+    <DisplayName>ServiceCallout-ApigeeBaaS</DisplayName>
+    <Properties/>
+    <Request clearPayload="true" variable="myRequest">
+        <IgnoreUnresolvedVariables>true</IgnoreUnresolvedVariables>
+        <Set>
+            <Headers>
+                <Header name="Content-type">application/json</Header>
+            </Headers>
+            <Payload contentType="application/json">
+            {"grant_type":"password", "username":"{username}", "password":"{password}"}
+            </Payload>
+            <Path>/BAASOrg/BAASApp/token/</Path>
+            <Verb>POST</Verb>
+        </Set>
+    </Request>
+    <Response>calloutResponse</Response>
+    <HTTPTargetConnection>
+        <Properties/>
+        <URL>https://apibaas-trial.apigee.net</URL>
+    </HTTPTargetConnection>
+</ServiceCallout>

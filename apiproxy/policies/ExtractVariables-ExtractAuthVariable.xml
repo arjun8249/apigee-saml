@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ExtractVariables async="false" continueOnError="false" enabled="true" name="ExtractVariables-ExtractAuthVariable">
+    <DisplayName>ExtractVariables-ExtractAuthVariable</DisplayName>
+    <Properties/>
+    <IgnoreUnresolvedVariables>false</IgnoreUnresolvedVariables>
+    <JSONPayload>
+        <Variable name="token">
+            <JSONPath>$.access_token</JSONPath>
+        </Variable>
+        <Variable name="username">
+            <JSONPath>$.user.username</JSONPath>
+        </Variable>
+        <Variable name="email">
+            <JSONPath>$.user.email</JSONPath>
+        </Variable>
+    </JSONPayload>
+    <Source clearPayload="false">calloutResponse</Source>
+    <VariablePrefix>apigee</VariablePrefix>
+</ExtractVariables>

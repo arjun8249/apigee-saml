@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<GenerateSAMLAssertion ignoreContentType="false" name="GenerateSAML-Assertion">
+    <DisplayName>GenerateSAML-Assertion</DisplayName>
+    <KeyStore>
+      <Name>saml_test</Name>
+      <Alias>saml</Alias>
+      <!--use reference to refer to a flow variable instead of hardcoding.-->
+      <!--Name ref="flow.variable"></Name-->
+      <!--Alias ref="flow.variable"></Alias-->
+    </KeyStore>
+    <Subject ref="reference">1234</Subject>
+    <Issuer ref="reference">samltest</Issuer>
+    <!--use reference to refer to a flow variable instead of hardcoding.-->
+    <!--Subject ref="flow.variable"></Subject-->
+    <!--Issuer ref="flow.variable"></Issuer-->
+    <Template ignoreUnresolvedVariables="false"/>
+    <OutputVariable>
+        <Message name="message">
+            <Namespaces>
+                <Namespace prefix="soapenv">http://schemas.xmlsoap.org/soap/envelope/</Namespace>
+            </Namespaces>
+            <XPath>/soapenv:Envelope/soapenv:Header</XPath>
+        </Message>
+    </OutputVariable>
+</GenerateSAMLAssertion>
