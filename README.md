@@ -70,7 +70,7 @@ Note the following:
   * notice that anything in the template with `{}` is a flow variable.
   * anything that is prefixed with `saml` was generated automatically by the SAML policy  
 
-```
+```XML
 <Template ignoreUnresolvedVariables="false"><![CDATA[
 <saml:Assertion xmlns:samlp="urn:oasis:names:tc:SAML:2.0:protocol" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#"
             xmlns:enc="http://www.w3.org/2001/04/xmlenc#" xmlns:saml="urn:oasis:names:tc:SAML:2.0:assertion"
