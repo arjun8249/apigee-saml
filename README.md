@@ -62,7 +62,7 @@ This [documentation](https://www.soapui.org/soapui-projects/ws-security.html) de
 ## Generate SAML Policy -> GenerateSAML-AssertFromUsernamePassword
 The `GenerateSAML-AssertFromUsernamePassword` policy generates a SAML assertion with the `<Template>` element, which is shown below.
 
-The template allows you define how the SAML Assertion as opposed to using the default assertion that Apigee creates.  
+The template allows you define the SAML Assertion as opposed to using the default assertion that Apigee creates.  
 
 Note the following:
 * You must use `<![CDATA[ .... template goes here ]]>`
