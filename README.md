@@ -68,7 +68,7 @@ Note the following:
 * You must use `<![CDATA[ .... template goes here ]]>`
 * When you define the template, you can include flow variables to make it dynamic
   * notice that anything in the template with `{}` is a flow variable.
-  * anything that is prefixed with `saml` was generated automatically by the SAML policy  
+  * anything that is prefixed with `{saml.variable}` was generated automatically by the SAML policy  
 
 ```XML
 <Template ignoreUnresolvedVariables="false"><![CDATA[
