@@ -37,7 +37,7 @@
                     <Name>JavaScript-GenerateNotOnOrAfterDate</Name>
                 </Step>
                 <Step>
-                    <Name>GenerateSAML-AssertFromUserNamePassword</Name>
+                    <Name>GenerateSAML-AssertFromUsernamePassword</Name>
                     <Condition>calloutResponse.status.code == 200</Condition>
                 </Step>
                 <Step>
