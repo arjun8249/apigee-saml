@@ -18,7 +18,8 @@ Get a SAML assertion.  Make sure to replace the `ORG` and `ENV` below with your 
 ```
 curl -X GET \
   https://ORG-ENV.apigee.net/saml/generate-saml \
-  -H 'cache-control: no-cache'
+  -H 'cache-control: no-cache' \
+  -H 'Content-type: application/xml'
 ```
 
 ### Generate SAML With username and password

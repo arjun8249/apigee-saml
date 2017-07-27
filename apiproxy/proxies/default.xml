@@ -99,6 +99,6 @@
         <VirtualHost>secure</VirtualHost>
     </HTTPProxyConnection>
     <RouteRule name="route">
-        <TargetEndpoint>default</TargetEndpoint>
+        <!--TargetEndpoint>default</TargetEndpoint-->
     </RouteRule>
 </ProxyEndpoint>

@@ -15,11 +15,12 @@
     <!--Issuer ref="flow.variable"></Issuer-->
     <Template ignoreUnresolvedVariables="false"/>
     <OutputVariable>
-        <Message name="message">
+        <!--Message name="message">
             <Namespaces>
                 <Namespace prefix="soapenv">http://schemas.xmlsoap.org/soap/envelope/</Namespace>
             </Namespaces>
             <XPath>/soapenv:Envelope/soapenv:Header</XPath>
-        </Message>
+        </Message-->
+        <FlowVariable name="assertion.content"/>
     </OutputVariable>
 </GenerateSAMLAssertion>
